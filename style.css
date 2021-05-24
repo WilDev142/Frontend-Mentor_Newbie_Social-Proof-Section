@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "Spartan Medium";
+    src: url("polices/Spartan-Medium.ttf");
+}
+@font-face {
+    font-family: "Spartan Bold";
+    src: url("polices/Spartan-Bold.ttf");
+}
+@font-face {
+    font-family: "Spartan Light";
+    src: url("polices/Spartan-Light.ttf");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size : 15px;
+    font-family: "Spartan Medium";
+}
+
+body{
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#top_block{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#title_block{
+    width: 40%;
+}
+
+h1{
+    font-size: 4em;
+    color: hsl(300, 43%, 22%);
+    font-family: "Spartan Bold";
+}
+
+#title_block p{
+    color: hsl(303, 10%, 53%);
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+#revue_ratings_block{
+    width: 580px;
+}
+
+.revue_rating{
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    padding: 20px 30px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.star_icon{
+    margin-right: 5px;
+}
+
+.revue_rating p{
+    font-family: "Spartan Bold";
+    color: hsl(300, 43%, 22%);
+    margin-left: 30px;
+}
+
+.revue_rating:nth-child(1){
+    margin-top: 20px;
+}
+.revue_rating:nth-child(2){
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.revue_rating:nth-child(3){
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+#bottom_block{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buyer_review{
+    padding: 30px;
+    width: 25%;
+    height: 200px;
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    position: relative;
+}
+
+.buyer_review:nth-child(2){
+    top: 20px;
+}
+
+.buyer_review:nth-child(3){
+    top: 40px;
+}
+
+.review_top_section{
+    display: flex;
+}
+
+.buyer_name{
+    margin-left: 25px;
+}
+
+.review_top_section img{
+    border-radius: 50px;
+    width: 50px;
+}
+
+.review_top_section h3{
+    color: hsl(333, 80%, 67%);
+    font-family: "Spartan Light";
+    margin-top: 8px;
+}
+
+.buyer_review p{
+    line-height: 25px;
+    font-family: "Spartan Light";
+    margin-top: 30px;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width : 1200px){
+
+    body{
+        padding: 60px 30px;
+    }
+
+    #top_block{
+        flex-direction: column;
+    }
+    #bottom_block{
+        flex-direction: column;
+    }
+
+    #title_block{
+        width: 100%;
+        text-align: center;
+    }
+
+    #title_block p{
+        margin-top: 40px;
+    }
+
+    h1{
+        line-height: 60px;
+    }
+
+    #revue_ratings_block{
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .revue_rating{
+        width: 100%;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .revue_rating p{
+        margin: 10px 0 0 0;
+    }
+
+    .revue_rating:nth-child(1){
+        margin: 20px 0 0 0;
+    }
+    .revue_rating:nth-child(2){
+        margin: 20px 0 0 0;
+    }
+    .revue_rating:nth-child(3){
+        margin: 20px 0 0 0;
+    }
+
+    .buyer_review{
+        width: 100%;
+        height: 260px;
+        box-sizing: border-box;
+    }
+
+    .buyer_review p{
+        margin-top: 35px;
+    }
+}
